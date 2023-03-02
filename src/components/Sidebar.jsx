@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { RiHomeFill } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaCat } from "react-icons/fa";
 import logo from "../assets/react.svg";
 import { categories } from "../utils/data";
 import { AiOutlineLogout } from "react-icons/ai";
@@ -29,12 +30,12 @@ function Sidebar({ user, closeToggle }) {
     <div className="flex flex-col bg-white h-full min-w-[230px] justify-between">
       {user && (
         <Link
-          to={`user-profile/${user._id}`}
+          to="/"
           className="flex my-5 mb-3 gap-2 p-2 items-center bg-white rounded-lg shadow-lg mx-3"
           onClick={handleCloseSidebar}
         >
-          <img src={user.image} alt="profile-image" className="w-9 rounded" />
-          <p className="text-gray-800 text-2xl font-bold">{`Hi, ${user.userName}`}</p>
+          <FaCat size={24} className="mr-2" />
+          <p className="text-gray-800 text-2xl font-bold">ShareKar</p>
         </Link>
       )}
       <div className="flex flex-col">
