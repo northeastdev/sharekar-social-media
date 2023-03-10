@@ -71,7 +71,7 @@ const PinDetail = ({ user }) => {
         >
           <div className="flex justify-center items-center md:items-start flex-initial">
             <img
-              className="rounded-t-3xl rounded-b-lg"
+              className="rounded-lg"
               src={pinDetail?.image && urlFor(pinDetail?.image).url()}
               alt="user-post"
             />
@@ -82,7 +82,7 @@ const PinDetail = ({ user }) => {
                 <a
                   href={`${pinDetail?.image.asset.url}?dl=`}
                   download
-                  className="bg-secondaryColor p-2 text-xl rounded-full flex items-center justify-center text-dark opacity-75 hover:opacity-100"
+                  className="bg-secondaryColor text-xl rounded-full flex items-center justify-center text-dark opacity-75 hover:opacity-100"
                 >
                   <MdDownloadForOffline />
                 </a>
