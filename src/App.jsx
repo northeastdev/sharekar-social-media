@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const user = fetchUser();
-    if (!user) navigate("/");
+    if (!user) navigate("/login");
   }, []);
 
   return (
